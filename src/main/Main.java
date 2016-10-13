@@ -1,5 +1,6 @@
 package main;
 
+import adapter.AudioPlayer;
 import factory.Color;
 import factory.Shape;
 import factory.ShapeFactory;
@@ -41,6 +42,12 @@ public class Main
 		singletonDemo.showMsg();
 
 		// 04. Adapter pattern
+		System.out.println( "************** Adapter Design Pattern Demo *************** ");
+		AudioPlayer audioPlayer = new AudioPlayer();
+		audioPlayer.play( "mp3", "You are my sun shine... !!!" );
+		audioPlayer.play( "mp4", "Fantastic Four Movie" );
+		audioPlayer.play( "vlc", "Prison Break Episode S1E1" );
+		audioPlayer.play( "avi", "Titanic" );
 
 	}
 
