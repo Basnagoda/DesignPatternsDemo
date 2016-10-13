@@ -1,5 +1,6 @@
 package factory;
 
+import factory.abstractfac.AbstractFactory;
 import factory.concrete.Circle;
 import factory.concrete.Rectangle;
 import factory.concrete.Triangle;
@@ -7,7 +8,7 @@ import factory.concrete.Triangle;
 /**
  * Created by sampathb on 10/13/2016.
  */
-public class ShapeFactory
+public class ShapeFactory extends AbstractFactory
 {
 	public Shape getShape( String shape )
 	{
@@ -23,6 +24,12 @@ public class ShapeFactory
 		{
 			return new Rectangle();
 		}
+		return null;
+	}
+
+	@Override
+	public Color getColor( String color )
+	{
 		return null;
 	}
 }
