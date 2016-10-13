@@ -20,6 +20,8 @@ public class Main
 
 		Shape triangle = shapeFactory.getShape( "TRIANGLE" );
 		triangle.draw();
+		
+		// 02. Abstract Factory Pattern
 	}
 
 }
