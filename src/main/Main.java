@@ -29,6 +29,8 @@ public class Main
 		SingletonDemo singletonDemo = SingletonDemo.getInstance();
 		singletonDemo.showMsg();
 
+		// 04. Adapter pattern
+
 	}
 
 }
